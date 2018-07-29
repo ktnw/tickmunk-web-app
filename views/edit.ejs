@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Puppy</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Puppy</h1>
+
+      <fieldset>
+        <form action="/save" method="post">
+          <input name="id" type="hidden" value="<%= puppy.id %>">
+          <input name="name" type="text" value="<%= puppy.name %>" required>
+          <input name="breed" type="text" value="<%= puppy.breed %>" required>
+          <input name="birthdate" type="text" value="<%= puppy.birthdate %>" required>
+          <input type="submit" value="Save">
+        </form>
+      </fieldset>
+
+    </div>
+  </body>
+</html>
